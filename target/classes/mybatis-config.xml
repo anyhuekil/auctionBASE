@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- mybatis 관련 설정파일 resource/mybatis.Spring.xml -->
+<configuration>
+	<typeAliases>
+		<typeAlias alias="testAlias" type="com.cto.auction.vo.TestVO" />
+		<typeAlias alias="testAlias2" type="com.cto.auction.vo.TestVO" />
+	</typeAliases>
+</configuration>
