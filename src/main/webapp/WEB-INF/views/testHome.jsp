@@ -9,7 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>♪Quiz</title>
-<link rel="stylesheet" href="resources/css/quiz.css">
+<link rel="stylesheet" href="resources/css/test.css">
 <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -17,7 +17,7 @@
 			//alert();
 			//alert($(this).children().html());
 			var dcno = $(this).children().html();
-			$(location).attr("href", "gogo.not?no=" + dcno);
+			$(location).attr("href", "gogo.not?dataNo=" + dcno);
 		});
 	});
 </script>
@@ -28,8 +28,8 @@
 		<div class="yTitle">은행문제?</div>
 		<form method="post">
 			<div class="yTr">
-				번호<input type="text" name="no_NOmean" value="${qListJSPserch.no }" />
-				문제<input type="text" name="quiz_NOmean" value="${qListJSPserch.quiz }" />
+				번호<input type="text" name="no_NOmean" value="${testCtrlModelAttribute.dataNo }" />
+				A<input type="text" name="quiz_NOmean" value="${testCtrlModelAttribute.dataA }" />
 				<input type="submit" value="???" />
 			</div>
 		</form>
@@ -37,10 +37,12 @@
 			<div class="yTd yW20">No</div>
 			<div class="yTd yW80">Quiz</div>
 		</div>
-		<c:forEach var="qBankJspOnly" items="${qListJSP }">
+		<c:forEach var="acListJspOnly" items="${acHomeJSP }">
 			<div class="yTr">
-				<div class="yTd yW20">${qBankJspOnly.no}</div>
-				<div class="yTd yW80">${qBankJspOnly.quiz}</div>
+				<div class="yTd yW20">${acListJspOnly.dataNo}</div>
+				<div class="yTd yW20">${acListJspOnly.dataA}</div>
+				<div class="yTd yW20">${acListJspOnly.dataB}</div>
+				<div class="yTd yW20">${acListJspOnly.dataDate}</div>
 			</div>
 		</c:forEach>
 	</div>

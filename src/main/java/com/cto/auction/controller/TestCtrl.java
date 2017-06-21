@@ -16,7 +16,7 @@ public class TestCtrl {
 
 	@RequestMapping("/testhome")
 	public String testCtrlMethod(@ModelAttribute("testCtrlModelAttribute") TestVO sch, Model d) {
-		d.addAttribute("qListJSP", service.testSrvcMethod(sch));
+		d.addAttribute("acHomeJSP", service.testSrvcMethod(sch));
 		return "testHome";
 	}
 }

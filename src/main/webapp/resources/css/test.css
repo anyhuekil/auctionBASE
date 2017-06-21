@@ -1,0 +1,67 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.whyContain,
+.yTr{
+	padding: 0;
+}
+
+.whyContain:after, .whyContain:before,
+.yTr:after, .yTr:before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.yMain{
+	width: 1200px;
+	margin: 0 auto;
+	background: #151515;
+	color: white;
+}
+.yTitle{
+	color: gold;
+	font-size: 30px;
+	text-align: center;
+}
+.yTr{
+	border-style: groove;
+	font-size: 20px;
+}
+.yTd{
+	display: inline-block;
+	float: left;
+}
+.yW20{
+	width:20%;
+}
+.yW80{
+	width:80%;
+}
+
+input{
+	font-size: 20px;
+}
+
+/* *{border: 1px dotted red;} */
+
+
+input[name=quiz]{
+	width: 600px;
+}			
+			
+			

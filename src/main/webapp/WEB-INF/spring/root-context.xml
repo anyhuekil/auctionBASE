@@ -35,7 +35,7 @@
 		<!-- classpath : src/main/resources를 의미 -->
 		<!-- ** : 디렉토리를 의미 -->
 		<!-- * : 파일명을 의미 -->
-		<property value="classpath:*Mapper.xml" name="mapperLocations" />
+		<property value="classpath:mappers/*Mapper.xml" name="mapperLocations" />
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property value="com.cto.auction.repository" name="basePackage" />

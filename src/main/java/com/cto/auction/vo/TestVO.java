@@ -1,13 +1,13 @@
 package com.cto.auction.vo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class TestVO {
 
 	private Integer dataNo;
 	private String dataA;
 	private String dataB;
-	private Date datadate;
+	private Timestamp dataDate;
 
 	public Integer getDataNo() {
 		return dataNo;
@@ -33,12 +33,13 @@ public class TestVO {
 		this.dataB = dataB;
 	}
 
-	public Date getDatadate() {
-		return datadate;
+	public Timestamp getDataDate() {
+		return dataDate;
 	}
 
-	public void setDatadate(Date datadate) {
-		this.datadate = datadate;
+	public void setDataDate(Timestamp dataDate) {
+		this.dataDate = dataDate;
 	}
+
 
 }
